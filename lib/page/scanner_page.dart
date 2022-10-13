@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/helper/language_constans.dart';
 import 'package:flutter_application_1/widget/build_drawer.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
@@ -49,7 +50,7 @@ class _ScannerPageState extends State<ScannerPage> {
       drawer: const DrawerWidget(selected: 4),
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("Scanner Page"),
+        title: Text(transtation(context).scanner),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

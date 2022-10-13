@@ -1,5 +1,6 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/helper/language_constans.dart';
 import 'package:flutter_application_1/widget/build_button.dart';
 import 'package:flutter_application_1/widget/build_drawer.dart';
 
@@ -13,6 +14,7 @@ class ConvertBasePage extends StatefulWidget {
 }
 
 class _ConvertBasePageState extends State<ConvertBasePage> {
+  String name = "";
   List<String> base = [
     "2 (Binary)",
     "8 (Octal)",
@@ -137,7 +139,7 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
 
   get buildAppbar {
     return AppBar(
-      title: const Text("Convert Base "),
+      title: Text(transtation(context).convertbase),
     );
   }
 

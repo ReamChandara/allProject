@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print, must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/helper/language_constans.dart';
 import 'package:flutter_application_1/widget/build_drawer.dart';
 
 import '../widget/custom_textfield.dart';
@@ -74,7 +75,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
 
   get buildAppbar {
     return AppBar(
-      title: const Text("Tempurature"),
+      title: Text(transtation(context).temperature),
     );
   }
 
