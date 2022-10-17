@@ -1,9 +1,19 @@
 {
     "calculator": "計算器",
     "temperature": "溫度",
+    "celsius": "攝氏度",
+    "fahrenheit": "華氏度",
+    "kelven": "開爾文",
     "convertbase": "轉換庫",
+    "enternumber": "輸入號碼",
+    "fromebase": "從基地",
+    "selectbase": "選擇基地",
+    "tobase": "基地",
+    "resultnumber": "結果編號",
     "scanner": "掃描器",
     "setting": "環境",
     "changelang": "改變語言",
-    "changetheme": "換顏色"
+    "changetheme": "換顏色",
+    "convert": "兌換",
+    "clear": "清理"
 }

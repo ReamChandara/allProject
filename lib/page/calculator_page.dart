@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widget/build_drawer.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:get/get.dart';
 
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({Key key}) : super(key: key);
@@ -29,7 +30,10 @@ class _CalculatorPageState extends State<CalculatorPage> {
   }
 
   get _buildAppBar {
-    return AppBar(title: Text(AppLocalizations.of(context).calculator));
+    return AppBar(
+      title: Text(AppLocalizations.of(context).calculator),
+      backgroundColor: Theme.of(context).primaryColor,
+    );
   }
 
   get _buildBody {

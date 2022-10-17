@@ -54,6 +54,7 @@ class _LanguagePageState extends State<LanguagePage> {
 
   AppBar buildAppbar() {
     return AppBar(
+      backgroundColor: Theme.of(context).primaryColor,
       title: Text(transtation(context).changelang),
     );
   }

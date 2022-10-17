@@ -47,6 +47,8 @@ dependencies:
   intl: ^0.17.0
   date_time_picker: ^2.1.0
   shared_preferences: ^2.0.15
+  get: ^4.6.5
+  get_storage: ^2.0.3
 dev_dependencies:
   flutter_test:
     sdk: flutter

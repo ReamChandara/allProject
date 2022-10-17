@@ -49,6 +49,7 @@ class _ScannerPageState extends State<ScannerPage> {
     return Scaffold(
       drawer: const DrawerWidget(selected: 4),
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
         centerTitle: true,
         title: Text(transtation(context).scanner),
       ),
@@ -88,7 +89,17 @@ class _ScannerPageState extends State<ScannerPage> {
   }
 
   Widget buildBotton(String text, Function() onTap) {
-    return ElevatedButton(onPressed: onTap, child: Text(text));
+    return InkWell(
+        onTap: onTap,
+        child: Container(
+            width: 150,
+            alignment: Alignment.center,
+            height: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(5),
+              color: Theme.of(context).primaryColor,
+            ),
+            child: Text(text)));
   }
 
   TextFormField buildEmailFormField(

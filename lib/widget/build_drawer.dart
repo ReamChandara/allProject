@@ -5,6 +5,7 @@ import 'package:flutter_application_1/page/convert_base_page.dart';
 import 'package:flutter_application_1/page/scanner_page.dart';
 import 'package:flutter_application_1/page/setting_page.dart';
 import 'package:flutter_application_1/page/tamperature_page.dart';
+import 'package:flutter_application_1/theme/theme.dart';
 import 'package:flutter_application_1/widget/drawer_header.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'list_drawer.dart';
@@ -25,7 +26,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
           Expanded(
             flex: 15,
             child: Container(
-              color: Colors.white,
+              color: Theme.of(context).primaryColor,
               child: SingleChildScrollView(
                 child: Column(
                   children: [
@@ -121,7 +122,6 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 ),
               ),
               decoration: const BoxDecoration(
-                color: Colors.white,
                 border: Border.symmetric(
                   vertical: BorderSide.none,
                   horizontal: BorderSide(width: 0.5),

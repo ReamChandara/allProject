@@ -1,9 +1,19 @@
 {
     "calculator": "Calculator",
     "temperature": "Temperature",
+    "celsius": "Celsius",
+    "fahrenheit": "Fehrenheit",
+    "kelven": "Kelven",
     "convertbase": "Convert base",
+    "enternumber": "Enter number",
+    "fromebase": "From Base",
+    "selectbase": "Select Base",
+    "tobase": "To Base",
+    "resultnumber": "Result number",
     "scanner": "Scanner",
     "setting": "Setting",
     "changelang": "Change Languages",
-    "changetheme": "Change Theme"
+    "changetheme": "Change Theme",
+    "convert": "Convert",
+    "clear": "Clear"
 }

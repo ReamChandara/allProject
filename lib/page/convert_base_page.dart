@@ -139,7 +139,10 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
 
   get buildAppbar {
     return AppBar(
-      title: Text(transtation(context).convertbase),
+      backgroundColor: Theme.of(context).primaryColor,
+      title: Text(
+        transtation(context).convertbase,
+      ),
     );
   }
 
@@ -154,9 +157,10 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    "Enter number",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  Text(
+                    transtation(context).enternumber,
+                    style: const TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 10,
@@ -179,9 +183,10 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
                   const SizedBox(
                     height: 20,
                   ),
-                  const Text(
-                    "From Base",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  Text(
+                    transtation(context).fromebase,
+                    style: const TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 10,
@@ -194,7 +199,7 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
                     buttonHeight: 60,
                     buttonWidth: double.infinity,
                     itemHeight: 60,
-                    hint: 'Select Base',
+                    hint: transtation(context).selectbase,
                     dropdownItems: base,
                     value: fromBase,
                     onChanged: (value) {
@@ -206,9 +211,10 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
                   const SizedBox(
                     height: 20,
                   ),
-                  const Text(
-                    "To Base",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  Text(
+                    transtation(context).tobase,
+                    style: const TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 10,
@@ -222,7 +228,7 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
                     buttonHeight: 60,
                     buttonWidth: double.infinity,
                     itemHeight: 60,
-                    hint: 'Select Base',
+                    hint: transtation(context).selectbase,
                     dropdownItems: base,
                     value: toBase,
                     onChanged: (value) {
@@ -341,8 +347,7 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
                                   }
                                 }
                               },
-                              text: "Convert",
-                            )
+                              text: transtation(context).convert)
                           : const SizedBox(),
                       click == false
                           ? BuildButton(
@@ -355,17 +360,17 @@ class _ConvertBasePageState extends State<ConvertBasePage> {
                                 //   resultCon.text = "";
                                 // });
                               },
-                              text: "Convert",
-                            )
+                              text: transtation(context).convert)
                           : const SizedBox(),
                     ],
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  const Text(
-                    "Result number",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  Text(
+                    transtation(context).resultnumber,
+                    style: const TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 10,

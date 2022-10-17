@@ -25,14 +25,13 @@ class _HeaderDrawerState extends State<HeaderDrawer> {
         child: ListTile(
           title: const Text(
             "Ream Chandara",
-            style: TextStyle(fontSize: 20.0, color: Colors.white),
+            style: TextStyle(fontSize: 20.0),
           ),
           leading: Container(
             width: 100,
             height: 100,
             decoration: BoxDecoration(
               border: Border.all(
-                color: Colors.white,
                 width: 0.5,
               ),
               shape: BoxShape.circle,

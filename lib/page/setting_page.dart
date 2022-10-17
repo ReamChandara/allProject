@@ -27,6 +27,7 @@ class _SettingPageState extends State<SettingPage> {
 
   get buildAppbar {
     return AppBar(
+      backgroundColor: Theme.of(context).primaryColor,
       title: Text(transtation(context).setting),
     );
   }

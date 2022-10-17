@@ -1,9 +1,19 @@
 {
     "calculator": "មាស៊ីនគិតលេខ",
     "temperature": "គណនាសីតុណ្ហភាព",
+    "celsius": "អង្សាសេ",
+    "fahrenheit": "ហ្វារិនហៃ",
+    "kelven": "ខេលវេន",
     "convertbase": "បំលែងគោល",
+    "enternumber": "បញ្ចូលលេខ",
+    "fromebase": "ពី គោល",
+    "selectbase": "ជ្រើសរើស គោល",
+    "tobase": "ទៅ គោល",
+    "resultnumber": "បង្ហាញ គោល",
     "scanner": "មាស៊ីនស្កេន",
     "setting": "កំណត់",
     "changelang": "ប្តូភាសា",
-    "changetheme": "ប្តូពណ៏"
+    "changetheme": "ប្តូពណ៏",
+    "convert": "បម្លែង",
+    "clear": "សម្អាត"
 }

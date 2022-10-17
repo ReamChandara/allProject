@@ -75,6 +75,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
 
   get buildAppbar {
     return AppBar(
+      backgroundColor: Theme.of(context).primaryColor,
       title: Text(transtation(context).temperature),
     );
   }
@@ -103,7 +104,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
                   }
                 },
                 controller: celsiusCon,
-                leading: "Celsius",
+                leading: transtation(context).celsius,
                 isReadOnly: readonly1),
             const SizedBox(
               height: 20,
@@ -123,7 +124,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
                 }
               },
               controller: fahrenheitCon,
-              leading: "Fahrenheit",
+              leading: transtation(context).fahrenheit,
               isReadOnly: readonly2,
             ),
             const SizedBox(
@@ -144,7 +145,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
                   }
                 },
                 controller: kelvenCon,
-                leading: "Kelven",
+                leading: transtation(context).kelven,
                 isReadOnly: readonly3),
             const SizedBox(
               height: 20,
@@ -179,7 +180,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
                   borderRadius: BorderRadius.circular(5),
                   color: Theme.of(context).primaryColor,
                 ),
-                child: const Text("Convert"),
+                child: Text(transtation(context).convert),
               ),
             ),
             const SizedBox(
@@ -204,7 +205,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
                   borderRadius: BorderRadius.circular(5),
                   color: Theme.of(context).primaryColor,
                 ),
-                child: const Text("Clear"),
+                child: Text(transtation(context).clear),
               ),
             ),
           ],
